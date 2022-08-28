@@ -1,3 +1,4 @@
+import splitbee from '@splitbee/web';
 import Aos from 'aos';
 import { useEffect } from 'react';
 import { AiTwotoneMail } from 'react-icons/ai';
@@ -38,19 +39,23 @@ export const HomePage = () => {
               Especializándome en el área front-end.
             </p>
             <div className="hidden mt-5 sm:justify-center lg:justify-start sm:flex  flex-wrap gap-2  ">
-              <Link href="https://github.com/danielcgilibert">
+              <Link
+                onClick={() => splitbee.track('Github')}
+                href="https://github.com/danielcgilibert">
                 <BsGithub size={20} />
                 Github
               </Link>
-              <Link href="../assets/cv.pdf" download>
+              <Link onClick={() => splitbee.track('CV')} href="../assets/cv.pdf" download>
                 <BsFillFileEarmarkTextFill size={20} />
                 CV
               </Link>
-              <Link href="https://www.linkedin.com/in/danielcarmonagilibert/">
+              <Link
+                onClick={() => splitbee.track('Linkedin')}
+                href="https://www.linkedin.com/in/danielcarmonagilibert/">
                 <BsLinkedin size={20} />
                 Linkedin
               </Link>
-              <Link href="mailto:danielcgilibert@gmail.com">
+              <Link onClick={() => splitbee.track('Email')} href="mailto:danielcgilibert@gmail.com">
                 <AiTwotoneMail size={20} /> Email
               </Link>
             </div>
