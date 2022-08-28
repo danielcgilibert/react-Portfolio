@@ -2,12 +2,12 @@ import Aos from 'aos';
 import { useEffect } from 'react';
 import { AiTwotoneMail } from 'react-icons/ai';
 import { BsFillFileEarmarkTextFill, BsGithub, BsLinkedin } from 'react-icons/bs';
-import imageProfile from '../assets/img/profile.jpeg';
 import { Footer } from '../components/Footer';
 import { Link } from '../components/Link';
 import { LinksMobile } from '../components/LinksMobile';
 import { ListProject } from '../components/ListProject';
 import { ListTags } from '../components/ListTags';
+import imageProfile from '/img/profile.jpeg';
 
 export const HomePage = () => {
   useEffect(() => {
